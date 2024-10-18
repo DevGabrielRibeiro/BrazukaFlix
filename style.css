@@ -1,13 +1,18 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
     background-color: #141414;
     color: #fff;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
     padding: 20px;
     background-color: #000;
@@ -29,27 +34,32 @@ header {
     font-weight: bold;
 }
 
-nav ul {
+
+.menu ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+.menu ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.menu ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    &:hover {
+        color: #e29e3a;
+        transition: color 0.2s;
+        text-decoration: underline;
+     }
 }
 
 .banner img {
     width: 100%;
     height: 500px;
-
 }
 
 
@@ -72,12 +82,16 @@ main{
 
 .grid h2 {
     font-size: 24px;
+    font-weight: bold;
+   
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
+    gap: 50px;
     transition: transform 0.3s, box-shadow 0.3s;
     border: 2px solid transparent;
     border-radius: 8px;
@@ -85,8 +99,16 @@ main{
 }
 
 .grid-item {
-    margin-bottom: 60px;
+    background-color: #242424;
+    border: 1px rgb(0, 0, 0) solid;
+    color: white;
+    padding: 5px 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
     cursor: pointer;
+    border-radius: 8px;
+    box-shadow: #000 10px 4px 8px;
 }
 
 .grid-item img {
@@ -94,14 +116,40 @@ main{
     height: 80%;
 }
 
+.grid-item p {
+    margin-top: 5px;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#page ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#page ul li a {
+    background-color: #242424;
+    border: none;
+    color: #fff;
+    box-shadow:#000 10px 4px 8px;
+    text-decoration: none;
+    
+}
+
 footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 100px;
+    align-items: center;
     padding: 20px;
     background-color: #000;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -119,6 +167,6 @@ footer {
 }
 
 .item:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
