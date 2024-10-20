@@ -170,3 +170,40 @@ footer {
     transform: scale(1.02);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
+
+.modal-content {
+    border-radius: 10px;
+}
+
+#close {
+    background-color: white !important;
+    
+}
+
+.modal-header {
+    background-color:#141414;
+    border: none;
+    color: white;
+}
+
+.modal-body {
+    background-color:#242424;
+}
+
+.modal-body label {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.modal-body input[type="text"], input [type="password"] {
+    box-shadow: #000 1px 4px 8px;
+}
+
+.modal-body button {
+    background-color: #141414;
+}
+
+.modal-body a{
+    margin-top: 10px;
+}
+
