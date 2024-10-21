@@ -200,10 +200,23 @@ footer {
 }
 
 .modal-body button {
-    background-color: #141414;
-}
-
-.modal-body a{
+    background-color: #4e4d4d;
+    border: none;
+    box-shadow:#000 1px 3px 8px;
     margin-top: 10px;
+    &:hover {
+        background-color: #fff;
+        color: #000;
+
+    }
 }
 
+.modal-body a {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    &:hover {
+        text-decoration: underline;
+    }
+}
